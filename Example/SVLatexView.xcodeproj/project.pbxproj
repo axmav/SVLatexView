@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1145F28999820411195A2D53 /* SVLatexView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SVLatexView.podspec; path = ../SVLatexView.podspec; sourceTree = "<group>"; };
+		1145F28999820411195A2D53 /* SVLatexView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SVLatexView.podspec; path = ../SVLatexView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		44A3F66F52D464C487435CF4 /* Pods-SVLatexView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVLatexView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SVLatexView_Tests/Pods-SVLatexView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SVLatexView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SVLatexView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,8 +43,8 @@
 		A5AAE50F3595591BDDD17CBD /* Pods-SVLatexView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVLatexView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SVLatexView_Tests/Pods-SVLatexView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B6CE7A269E6A6B148A67183F /* Pods-SVLatexView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVLatexView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SVLatexView_Example/Pods-SVLatexView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CAC8E62E4F4A36754CA191A2 /* Pods_SVLatexView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVLatexView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6785F055EB3E521A55AEC66 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DA368A82B6E4D43A1A95740F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6785F055EB3E521A55AEC66 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DA368A82B6E4D43A1A95740F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EF923FDA0280B627770C2192 /* Pods_SVLatexView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVLatexView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1577DB63A269B523818D50A /* Pods-SVLatexView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVLatexView_Example.release.xcconfig"; path = "Target Support Files/Pods-SVLatexView_Example/Pods-SVLatexView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +147,6 @@
 				44A3F66F52D464C487435CF4 /* Pods-SVLatexView_Tests.debug.xcconfig */,
 				A5AAE50F3595591BDDD17CBD /* Pods-SVLatexView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

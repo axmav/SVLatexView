@@ -1,0 +1,769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22E7B2FBD99EB2EA88F98B09C841B650 /* Pods-SVLatexView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9330A2DFD95355C02C67246D2372E7FC /* Pods-SVLatexView_Example-dummy.m */; };
+		2DE58E71C8EE9EA207171A38D005961C /* Pods-SVLatexView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C308B43648E3B82B127FB905652610 /* Pods-SVLatexView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30B80476AB1A70F7A8F337B482EE8577 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		3B1BF32AE7291183C4F7E29B48D2E35A /* Pods-SVLatexView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AB8D6144D7A9AD4E5D8DB2CFB67CC0 /* Pods-SVLatexView_Tests-dummy.m */; };
+		520AA007C4B3122D93BD05772208229D /* Pods-SVLatexView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2792DDD88B9BE55A9DA42446C2CD3A3F /* Pods-SVLatexView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		570BA233C6B1FE9A6B315E93D990DCDE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6A7487BC42284753A1D36DFAC6E6996C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		7404CB6CAE59A3B0BD86AE0966149EC0 /* SVLatexView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9DE803A02E20566535EDE57C2E67E9 /* SVLatexView-dummy.m */; };
+		BE0845394A076E82180B413FCB2A230F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104B4203F9F19065E6AD634B9B99ABD7 /* ReplaceMe.swift */; };
+		CAE17E71CF09E9F26F17324968A9DC5D /* SVLatexView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 188DB3E78DCAB9D342F61CA28FDB2C71 /* SVLatexView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		167DD200604412DFFA58A4A098938C94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DB1D93D35D43EB7E84FC3D3A2CF10B;
+			remoteInfo = "Pods-SVLatexView_Example";
+		};
+		500347BB180C1B0FBD3BF6BFE6D1E10B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41434DC3DAFEBED91D712A89B6AA3885;
+			remoteInfo = SVLatexView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08AC983AAF1DB84FF8811F2B07D6EA89 /* Pods_SVLatexView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SVLatexView_Tests.framework; path = "Pods-SVLatexView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCD5C1C9A1B6C88AB7284C373E3B7E2 /* SVLatexView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVLatexView.modulemap; sourceTree = "<group>"; };
+		104B4203F9F19065E6AD634B9B99ABD7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SVLatexView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		174E111BC7B42C60370ACC43A3904A06 /* Pods-SVLatexView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVLatexView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		17CB610D02E2B614087C873DC4161202 /* Pods-SVLatexView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVLatexView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		188DB3E78DCAB9D342F61CA28FDB2C71 /* SVLatexView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVLatexView-umbrella.h"; sourceTree = "<group>"; };
+		18AB8D6144D7A9AD4E5D8DB2CFB67CC0 /* Pods-SVLatexView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SVLatexView_Tests-dummy.m"; sourceTree = "<group>"; };
+		1A2576F5ADC6F2C331D6AEE768DF3EA0 /* Pods-SVLatexView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVLatexView_Example-Info.plist"; sourceTree = "<group>"; };
+		22AD13E5BB565C65582A25656FE63BC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2792DDD88B9BE55A9DA42446C2CD3A3F /* Pods-SVLatexView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SVLatexView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		33685C46D9E712354BF027B7F892B1B7 /* SVLatexView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVLatexView.xcconfig; sourceTree = "<group>"; };
+		36532D6706844C6C4F62EC0190520D93 /* Pods-SVLatexView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SVLatexView_Example.modulemap"; sourceTree = "<group>"; };
+		4444689AEB51A3FD28CABE20D7748F44 /* Pods-SVLatexView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SVLatexView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5F8BE1C1A5B0DDC63AABB975366701E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		63104A8B232CB8ABE6D8F037D9061AB9 /* SVLatexView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVLatexView.framework; path = SVLatexView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A7474F8B51D96E44174E4A962A4792 /* Pods-SVLatexView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVLatexView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		821EFBBA42F65C1A0D3B02467A1A0734 /* Pods-SVLatexView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVLatexView_Tests-Info.plist"; sourceTree = "<group>"; };
+		8366CBC70BA98CDB4C15FB8FBB9E0750 /* Pods-SVLatexView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SVLatexView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89F65E094E952C473B73B0DE0CCD8FEB /* Pods_SVLatexView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SVLatexView_Example.framework; path = "Pods-SVLatexView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB3CD917EBC691DC30A79C5BE8C2CDB /* Pods-SVLatexView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SVLatexView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9152EACDCB46B893AA7AA805EA7165C2 /* SVLatexView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVLatexView-Info.plist"; sourceTree = "<group>"; };
+		9330A2DFD95355C02C67246D2372E7FC /* Pods-SVLatexView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SVLatexView_Example-dummy.m"; sourceTree = "<group>"; };
+		956530A1861762E5004CC62E8EC235B5 /* SVLatexView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVLatexView-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE3C0B12777D13A956C84AE9CA587378 /* Pods-SVLatexView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SVLatexView_Tests.modulemap"; sourceTree = "<group>"; };
+		B2DDE561984A58A4124E41658066A018 /* SVLatexView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SVLatexView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D15F7D2F97DFBFDE6EF1150421159313 /* Pods-SVLatexView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVLatexView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C308B43648E3B82B127FB905652610 /* Pods-SVLatexView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SVLatexView_Example-umbrella.h"; sourceTree = "<group>"; };
+		DA9DE803A02E20566535EDE57C2E67E9 /* SVLatexView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVLatexView-dummy.m"; sourceTree = "<group>"; };
+		E18A2B065ECB6C4101C21919CC902745 /* Pods-SVLatexView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SVLatexView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC9D888004F4B0A8C42E049156C4C5CE /* Pods-SVLatexView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SVLatexView_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BEF6EF0E8B6CE5859A465B5BBE6278A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7487BC42284753A1D36DFAC6E6996C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A3E1AFAE9F920BC9A9F8B1995523CA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B80476AB1A70F7A8F337B482EE8577 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A628796C805F5CC269296610D994BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570BA233C6B1FE9A6B315E93D990DCDE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0698D0056E95FF01F60D1E862D4F6AC6 /* Pods-SVLatexView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE3C0B12777D13A956C84AE9CA587378 /* Pods-SVLatexView_Tests.modulemap */,
+				8366CBC70BA98CDB4C15FB8FBB9E0750 /* Pods-SVLatexView_Tests-acknowledgements.markdown */,
+				E18A2B065ECB6C4101C21919CC902745 /* Pods-SVLatexView_Tests-acknowledgements.plist */,
+				18AB8D6144D7A9AD4E5D8DB2CFB67CC0 /* Pods-SVLatexView_Tests-dummy.m */,
+				821EFBBA42F65C1A0D3B02467A1A0734 /* Pods-SVLatexView_Tests-Info.plist */,
+				2792DDD88B9BE55A9DA42446C2CD3A3F /* Pods-SVLatexView_Tests-umbrella.h */,
+				17CB610D02E2B614087C873DC4161202 /* Pods-SVLatexView_Tests.debug.xcconfig */,
+				67A7474F8B51D96E44174E4A962A4792 /* Pods-SVLatexView_Tests.release.xcconfig */,
+			);
+			name = "Pods-SVLatexView_Tests";
+			path = "Target Support Files/Pods-SVLatexView_Tests";
+			sourceTree = "<group>";
+		};
+		34CE2F8FA2E69C9DBD69CC14482F69F3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F68562C1F7882E0767A727C9FA73885F /* SVLatexView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		41DEAAA7EEEC4B057705B900E57D5193 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85FAA442564CF4D61C794B4F0FD9BBA7 /* Pods-SVLatexView_Example */,
+				0698D0056E95FF01F60D1E862D4F6AC6 /* Pods-SVLatexView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6751511D89A7148945BCA78B01F10636 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FCD5C1C9A1B6C88AB7284C373E3B7E2 /* SVLatexView.modulemap */,
+				33685C46D9E712354BF027B7F892B1B7 /* SVLatexView.xcconfig */,
+				DA9DE803A02E20566535EDE57C2E67E9 /* SVLatexView-dummy.m */,
+				9152EACDCB46B893AA7AA805EA7165C2 /* SVLatexView-Info.plist */,
+				956530A1861762E5004CC62E8EC235B5 /* SVLatexView-prefix.pch */,
+				188DB3E78DCAB9D342F61CA28FDB2C71 /* SVLatexView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SVLatexView";
+			sourceTree = "<group>";
+		};
+		85123675C1B8731BE7926B57106CA491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89F65E094E952C473B73B0DE0CCD8FEB /* Pods_SVLatexView_Example.framework */,
+				08AC983AAF1DB84FF8811F2B07D6EA89 /* Pods_SVLatexView_Tests.framework */,
+				63104A8B232CB8ABE6D8F037D9061AB9 /* SVLatexView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85FAA442564CF4D61C794B4F0FD9BBA7 /* Pods-SVLatexView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				36532D6706844C6C4F62EC0190520D93 /* Pods-SVLatexView_Example.modulemap */,
+				8AB3CD917EBC691DC30A79C5BE8C2CDB /* Pods-SVLatexView_Example-acknowledgements.markdown */,
+				174E111BC7B42C60370ACC43A3904A06 /* Pods-SVLatexView_Example-acknowledgements.plist */,
+				9330A2DFD95355C02C67246D2372E7FC /* Pods-SVLatexView_Example-dummy.m */,
+				4444689AEB51A3FD28CABE20D7748F44 /* Pods-SVLatexView_Example-frameworks.sh */,
+				1A2576F5ADC6F2C331D6AEE768DF3EA0 /* Pods-SVLatexView_Example-Info.plist */,
+				D1C308B43648E3B82B127FB905652610 /* Pods-SVLatexView_Example-umbrella.h */,
+				D15F7D2F97DFBFDE6EF1150421159313 /* Pods-SVLatexView_Example.debug.xcconfig */,
+				FC9D888004F4B0A8C42E049156C4C5CE /* Pods-SVLatexView_Example.release.xcconfig */,
+			);
+			name = "Pods-SVLatexView_Example";
+			path = "Target Support Files/Pods-SVLatexView_Example";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				34CE2F8FA2E69C9DBD69CC14482F69F3 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				85123675C1B8731BE7926B57106CA491 /* Products */,
+				41DEAAA7EEEC4B057705B900E57D5193 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1E5FDF867E3D05547A62C1D134F92EF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				22AD13E5BB565C65582A25656FE63BC1 /* LICENSE */,
+				5F8BE1C1A5B0DDC63AABB975366701E7 /* README.md */,
+				B2DDE561984A58A4124E41658066A018 /* SVLatexView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F68562C1F7882E0767A727C9FA73885F /* SVLatexView */ = {
+			isa = PBXGroup;
+			children = (
+				104B4203F9F19065E6AD634B9B99ABD7 /* ReplaceMe.swift */,
+				D1E5FDF867E3D05547A62C1D134F92EF /* Pod */,
+				6751511D89A7148945BCA78B01F10636 /* Support Files */,
+			);
+			name = SVLatexView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		21F495D1E53C908283F489CFF1820008 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE17E71CF09E9F26F17324968A9DC5D /* SVLatexView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70556CD2434EDDF47C68CFF694AD95C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE58E71C8EE9EA207171A38D005961C /* Pods-SVLatexView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6EA1C9DA2C00C8CF253E9F075E822B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520AA007C4B3122D93BD05772208229D /* Pods-SVLatexView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28E21D3AC9EA4A87204368BD535E33EE /* Pods-SVLatexView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4EA583DA0CEBCEB4D3FB8B8C4BAE2E8 /* Build configuration list for PBXNativeTarget "Pods-SVLatexView_Tests" */;
+			buildPhases = (
+				FB6EA1C9DA2C00C8CF253E9F075E822B /* Headers */,
+				4720601D8C3FEB1815837CA7AF7B04C0 /* Sources */,
+				1BEF6EF0E8B6CE5859A465B5BBE6278A /* Frameworks */,
+				9870E92D3DD3072B303230DCDA6CD750 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B4280AFD1D55D8DA01E9DABA8BE5AFE /* PBXTargetDependency */,
+			);
+			name = "Pods-SVLatexView_Tests";
+			productName = "Pods-SVLatexView_Tests";
+			productReference = 08AC983AAF1DB84FF8811F2B07D6EA89 /* Pods_SVLatexView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41434DC3DAFEBED91D712A89B6AA3885 /* SVLatexView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4D8CFFB3F9759E48CC1F463C77EE122 /* Build configuration list for PBXNativeTarget "SVLatexView" */;
+			buildPhases = (
+				21F495D1E53C908283F489CFF1820008 /* Headers */,
+				6BF189183A5521A1096940E629E3E2DA /* Sources */,
+				71A628796C805F5CC269296610D994BB /* Frameworks */,
+				DA7BC0F427E870DF3E97787A4B557593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVLatexView;
+			productName = SVLatexView;
+			productReference = 63104A8B232CB8ABE6D8F037D9061AB9 /* SVLatexView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54DB1D93D35D43EB7E84FC3D3A2CF10B /* Pods-SVLatexView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7163793F307714CBE2EC51B23D82FFB /* Build configuration list for PBXNativeTarget "Pods-SVLatexView_Example" */;
+			buildPhases = (
+				70556CD2434EDDF47C68CFF694AD95C0 /* Headers */,
+				D77CDFE739EFB39BE122AFF900F9E698 /* Sources */,
+				6A3E1AFAE9F920BC9A9F8B1995523CA5 /* Frameworks */,
+				E254170C345C54835FFF58034306080C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF1A83F8697A4F85485F9F5207C9C5DA /* PBXTargetDependency */,
+			);
+			name = "Pods-SVLatexView_Example";
+			productName = "Pods-SVLatexView_Example";
+			productReference = 89F65E094E952C473B73B0DE0CCD8FEB /* Pods_SVLatexView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 85123675C1B8731BE7926B57106CA491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54DB1D93D35D43EB7E84FC3D3A2CF10B /* Pods-SVLatexView_Example */,
+				28E21D3AC9EA4A87204368BD535E33EE /* Pods-SVLatexView_Tests */,
+				41434DC3DAFEBED91D712A89B6AA3885 /* SVLatexView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9870E92D3DD3072B303230DCDA6CD750 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7BC0F427E870DF3E97787A4B557593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E254170C345C54835FFF58034306080C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4720601D8C3FEB1815837CA7AF7B04C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1BF32AE7291183C4F7E29B48D2E35A /* Pods-SVLatexView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF189183A5521A1096940E629E3E2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0845394A076E82180B413FCB2A230F /* ReplaceMe.swift in Sources */,
+				7404CB6CAE59A3B0BD86AE0966149EC0 /* SVLatexView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D77CDFE739EFB39BE122AFF900F9E698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E7B2FBD99EB2EA88F98B09C841B650 /* Pods-SVLatexView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B4280AFD1D55D8DA01E9DABA8BE5AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SVLatexView_Example";
+			target = 54DB1D93D35D43EB7E84FC3D3A2CF10B /* Pods-SVLatexView_Example */;
+			targetProxy = 167DD200604412DFFA58A4A098938C94 /* PBXContainerItemProxy */;
+		};
+		AF1A83F8697A4F85485F9F5207C9C5DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVLatexView;
+			target = 41434DC3DAFEBED91D712A89B6AA3885 /* SVLatexView */;
+			targetProxy = 500347BB180C1B0FBD3BF6BFE6D1E10B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		089A297E5D58DAF27A8DD521566BA0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D15F7D2F97DFBFDE6EF1150421159313 /* Pods-SVLatexView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVLatexView_Example/Pods-SVLatexView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVLatexView_Example/Pods-SVLatexView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2008C224ABBE2F8054EA639A472EE4E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9D888004F4B0A8C42E049156C4C5CE /* Pods-SVLatexView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVLatexView_Example/Pods-SVLatexView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVLatexView_Example/Pods-SVLatexView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E31475FBD45CE6A74ADE55C9B66D9DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33685C46D9E712354BF027B7F892B1B7 /* SVLatexView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVLatexView/SVLatexView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVLatexView/SVLatexView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVLatexView/SVLatexView.modulemap";
+				PRODUCT_MODULE_NAME = SVLatexView;
+				PRODUCT_NAME = SVLatexView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F06055C4F8FD3E0AD0EF31D747826CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33685C46D9E712354BF027B7F892B1B7 /* SVLatexView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVLatexView/SVLatexView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVLatexView/SVLatexView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVLatexView/SVLatexView.modulemap";
+				PRODUCT_MODULE_NAME = SVLatexView;
+				PRODUCT_NAME = SVLatexView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B95FDA141F9A1B048DA7066E6E3E1573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17CB610D02E2B614087C873DC4161202 /* Pods-SVLatexView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVLatexView_Tests/Pods-SVLatexView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVLatexView_Tests/Pods-SVLatexView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F830CB3F8A622F3EDC6A832FED9FBF22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A7474F8B51D96E44174E4A962A4792 /* Pods-SVLatexView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SVLatexView_Tests/Pods-SVLatexView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SVLatexView_Tests/Pods-SVLatexView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4D8CFFB3F9759E48CC1F463C77EE122 /* Build configuration list for PBXNativeTarget "SVLatexView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E31475FBD45CE6A74ADE55C9B66D9DE /* Debug */,
+				8F06055C4F8FD3E0AD0EF31D747826CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4EA583DA0CEBCEB4D3FB8B8C4BAE2E8 /* Build configuration list for PBXNativeTarget "Pods-SVLatexView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B95FDA141F9A1B048DA7066E6E3E1573 /* Debug */,
+				F830CB3F8A622F3EDC6A832FED9FBF22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7163793F307714CBE2EC51B23D82FFB /* Build configuration list for PBXNativeTarget "Pods-SVLatexView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089A297E5D58DAF27A8DD521566BA0D0 /* Debug */,
+				2008C224ABBE2F8054EA639A472EE4E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

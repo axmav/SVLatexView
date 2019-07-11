@@ -1,0 +1,6 @@
+framework module SVLatexView {
+  umbrella header "SVLatexView-umbrella.h"
+
+  export *
+  module * { export * }
+}

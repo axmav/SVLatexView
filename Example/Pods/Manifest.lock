@@ -1,0 +1,16 @@
+PODS:
+  - SVLatexView (0.1.0)
+
+DEPENDENCIES:
+  - SVLatexView (from `../`)
+
+EXTERNAL SOURCES:
+  SVLatexView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SVLatexView: 7cf1e62f881c4c47e658caec3475de74e3130e0b
+
+PODFILE CHECKSUM: 879938329f61ef812dde30589181bcc4e15e9dad
+
+COCOAPODS: 1.6.1
