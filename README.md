@@ -7,6 +7,8 @@
 
 ## Example
 
+![alt SVLatexView iOS Math View Example](https://cdn-images-1.medium.com/max/1600/1*dVJv23ChJixjayLKzL9HRg.png)
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
