@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    html, body, p {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 15px;
+    }
+</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+                       extensions: ["tex2jax.js"],
+                       jax: ["input/TeX","output/HTML-CSS"],
+                       showProcessingMessages: false,
+                       showMathMenu: false,
+                       showMathMenuMSIE: false,
+                       messageStyle: "none",
+                       tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}, "HTML-CSS": {linebreaks: {automatic: true}}
+    });
+                       
+    MathJax.Hub.Register.StartupHook("End",function () {
+                        document.getElementById("formula").style.display = ""
+    });
+    </script>
+<script type="text/javascript" src="MathJax.js"></script>
+</head>
+<body>
+    <p id="formula" style="display: none;">
+    {*latexString*}</p>
+</body>
+</html>

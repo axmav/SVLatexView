@@ -23,6 +23,7 @@ pod 'SVLatexView'
 ## Author
 
 Mazorati, alex@svntech.ru
+MathJax: https://www.mathjax.org/
 
 ## License
 

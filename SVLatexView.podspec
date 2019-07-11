@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SVLatexView'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Math equation rendering on iOS'
   s.description      = <<-DESC
   Math equation rendering on iOS using MathJax and WebKit
@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mazorati' => 'alex@svntech.ru' }
   s.source           = { :git => 'https://github.com/Mazorati/SVLatexView.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
-
+  s.ios.deployment_target = '11.0'
+  s.resources = ['SVLatexView/Libs/*']
   s.source_files = 'SVLatexView/Classes/**/*'
   
   # s.resource_bundles = {
