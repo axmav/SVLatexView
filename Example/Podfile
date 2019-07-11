@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SVLatexView_Example' do
+  pod 'SVLatexView', :path => '../'
+
+  target 'SVLatexView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
