@@ -7,7 +7,7 @@
 
 ## Example
 
-![alt SVLatexView iOS Math View Example](https://cdn-images-1.medium.com/max/1600/1*dVJv23ChJixjayLKzL9HRg.png)
+![alt SVLatexView iOS Math View Example](https://github.com/Mazorati/SVLatexView/blob/master/screenshot.png?raw=true =250x)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
