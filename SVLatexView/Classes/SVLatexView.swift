@@ -27,6 +27,14 @@ public class SVLatexView: WKWebView, WKUIDelegate {
     
     var engine: Engine = .KaTeX
     
+    let LatexViewSizeObservingContext = UnsafeMutableRawPointer(bitPattern: 1)
+    
+    var viewSize = CGSize.zero
+    
+    public override var intrinsicContentSize: CGSize {
+        return viewSize
+    }
+    
     public init(frame: CGRect, using engine: Engine = Engine.KaTeX) {
         super.init(frame: frame, configuration: WKWebViewConfiguration())
         self.engine = engine
@@ -50,6 +58,32 @@ public class SVLatexView: WKWebView, WKUIDelegate {
         isOpaque = false
         backgroundColor = UIColor.clear
         scrollView.backgroundColor = UIColor.clear
+        
+        addObserver(self, forKeyPath: #keyPath(scrollView.contentSize), options: .new, context: LatexViewSizeObservingContext)
+    }
+    
+    override public func observeValue(forKeyPath keyPath: String?,
+                               of object: Any?,
+                               change: [NSKeyValueChangeKey : Any]?,
+                               context: UnsafeMutableRawPointer?) {
+        guard let observingContext = context,
+            observingContext == LatexViewSizeObservingContext else {
+                super.observeValue(forKeyPath: keyPath,
+                                   of: object,
+                                   change: change,
+                                   context: context)
+                return
+        }
+        
+        guard let change = change else {
+            return
+        }
+        
+        if let newValue = change[.newKey] as? CGSize  {
+            self.viewSize = newValue
+            self.invalidateIntrinsicContentSize()
+        }
+        
     }
     
     public func loadLatexString(latexString: String) {
@@ -61,6 +95,10 @@ public class SVLatexView: WKWebView, WKUIDelegate {
         let html = try! String(contentsOfFile: filePath, encoding: .utf8)
         let htmlChanged = html.replacingOccurrences(of: "{*latexString*}", with: latexString)
         loadHTMLString(htmlChanged, baseURL: base)
+    }
+    
+    deinit {
+        removeObserver(self, forKeyPath: #keyPath(scrollView.contentSize))
     }
 }
 

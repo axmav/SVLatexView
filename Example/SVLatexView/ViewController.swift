@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     
-    lazy var latexView: SVLatexView = {
+    @objc lazy var latexView: SVLatexView = {
         let v = SVLatexView(frame: CGRect.zero)
         //v.backgroundColor = .
         v.translatesAutoresizingMaskIntoConstraints = false
@@ -23,9 +23,9 @@ class ViewController: UIViewController {
         return v
     }()
     
-    lazy var latexViewHeight: NSLayoutConstraint = {
-        return latexView.heightAnchor.constraint(equalToConstant: 70)
-    }()
+//    lazy var latexViewHeight: NSLayoutConstraint = {
+//        return latexView.heightAnchor.constraint(equalToConstant: 70)
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             latexView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             latexView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
             latexView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100),
-            latexViewHeight
+            //latexViewHeight
             ])
         
         let path = Bundle.main.path(forResource: "formula", ofType: "txt")!
@@ -45,25 +45,20 @@ class ViewController: UIViewController {
         
         latexView.loadLatexString(latexString: f)
         
-        latexView.scrollView.rx
-            .observe(CGSize.self, "contentSize")
-            .map {
-                $0?.height
-            }
-            .subscribe { [weak self] e in
-                if let eh = e.element, let h = eh {
-                    if h > 10.0 {
-                        self?.latexViewHeight.constant = h
-                    }
-                }
-                
-            }
-            .disposed(by: disposeBag)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//        latexView.scrollView.rx
+//            .observe(CGSize.self, "contentSize")
+//            .map {
+//                $0?.height
+//            }
+//            .subscribe { [weak self] e in
+//                if let eh = e.element, let h = eh {
+//                    if h > 10.0 {
+//                        self?.latexViewHeight.constant = h
+//                    }
+//                }
+//
+//            }
+//            .disposed(by: disposeBag)
     }
 
 }
