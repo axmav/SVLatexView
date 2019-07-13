@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/SVLatexView.svg?style=flat)](https://cocoapods.org/pods/SVLatexView)
 [![Platform](https://img.shields.io/cocoapods/p/SVLatexView.svg?style=flat)](https://cocoapods.org/pods/SVLatexView)
 
+SVLatexView is a third-party view library, which might help you display math formula on iOS apps. Two rendering engines available: [MathJax](https://www.mathjax.org/) and [KaTeX](https://github.com/Khan/KaTeX).
+
 ## Example
 
 ![alt SVLatexView iOS Math View Example](https://github.com/Mazorati/SVLatexView/blob/master/screenshot.png?raw=true)

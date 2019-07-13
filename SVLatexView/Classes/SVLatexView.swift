@@ -11,7 +11,29 @@ import WebKit
 
 public class SVLatexView: WKWebView, WKUIDelegate {
     
-    override init(frame: CGRect, configuration: WKWebViewConfiguration) {
+    public enum Engine {
+        case MathJax
+        case KaTeX
+        
+        var dirName: String {
+            switch self {
+            case .MathJax:
+                return "MathJax-master"
+            case .KaTeX:
+                return "katex"
+            }
+        }
+    }
+    
+    var engine: Engine = .KaTeX
+    
+    public init(frame: CGRect, using engine: Engine = Engine.KaTeX) {
+        super.init(frame: frame, configuration: WKWebViewConfiguration())
+        self.engine = engine
+        setupView()
+    }
+    
+    public override init(frame: CGRect, configuration: WKWebViewConfiguration) {
         super.init(frame: frame, configuration: configuration)
         setupView()
     }
@@ -32,9 +54,9 @@ public class SVLatexView: WKWebView, WKUIDelegate {
     
     public func loadLatexString(latexString: String) {
         let bundle = Bundle(for: SVLatexView.self)
-        let base = bundle.resourceURL?.appendingPathComponent("MathJax-master")
+        let base = bundle.resourceURL?.appendingPathComponent(engine.dirName)
         
-        let filePath = bundle.path(forResource:"index", ofType:"html", inDirectory: "MathJax-master")!
+        let filePath = bundle.path(forResource:"index", ofType:"html", inDirectory: engine.dirName)!
         // load html string - baseURL needs to be set for local files to load correctly
         let html = try! String(contentsOfFile: filePath, encoding: .utf8)
         let htmlChanged = html.replacingOccurrences(of: "{*latexString*}", with: latexString)
