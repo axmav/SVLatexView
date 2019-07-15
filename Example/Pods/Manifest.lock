@@ -5,7 +5,7 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
-  - SVLatexView (1.0.0)
+  - SVLatexView (1.1.2)
 
 DEPENDENCIES:
   - RxCocoa
@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SVLatexView: 9704e38ab315517795f7ac9718bc36916f7dfd42
+  SVLatexView: 7d46263b7bd11031d4078f1a448b4deeeb706819
 
 PODFILE CHECKSUM: d27789f92207afc4ecbe0518e5b5eda61d6cdccd
 

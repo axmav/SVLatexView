@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-public class SVLatexView: WKWebView, WKUIDelegate {
+public class SVLatexView: WKWebView, WKNavigationDelegate {
     
     public enum Engine {
         case MathJax
@@ -30,13 +30,19 @@ public class SVLatexView: WKWebView, WKUIDelegate {
     let LatexViewSizeObservingContext = UnsafeMutableRawPointer(bitPattern: 1)
     
     var viewSize = CGSize.zero
+    var preferredWidth: CGFloat?
     
     public override var intrinsicContentSize: CGSize {
+        if let preferredWidth = preferredWidth {
+            return CGSize(width: preferredWidth, height: viewSize.height)
+        }
+        
         return viewSize
     }
     
-    public init(frame: CGRect, using engine: Engine = Engine.KaTeX) {
+    public init(frame: CGRect, using engine: Engine = Engine.KaTeX, contentWidth: CGFloat? = nil) {
         super.init(frame: frame, configuration: WKWebViewConfiguration())
+        preferredWidth = contentWidth
         self.engine = engine
         setupView()
     }
@@ -58,35 +64,17 @@ public class SVLatexView: WKWebView, WKUIDelegate {
         isOpaque = false
         backgroundColor = UIColor.clear
         scrollView.backgroundColor = UIColor.clear
-        
-        addObserver(self, forKeyPath: #keyPath(scrollView.contentSize), options: .new, context: LatexViewSizeObservingContext)
-    }
-    
-    override public func observeValue(forKeyPath keyPath: String?,
-                               of object: Any?,
-                               change: [NSKeyValueChangeKey : Any]?,
-                               context: UnsafeMutableRawPointer?) {
-        guard let observingContext = context,
-            observingContext == LatexViewSizeObservingContext else {
-                super.observeValue(forKeyPath: keyPath,
-                                   of: object,
-                                   change: change,
-                                   context: context)
-                return
-        }
-        
-        guard let change = change else {
-            return
-        }
-        
-        if let newValue = change[.newKey] as? CGSize  {
-            self.viewSize = newValue
-            self.invalidateIntrinsicContentSize()
-        }
-        
+        scrollView.delegate = self
+        navigationDelegate = self
     }
     
     public func loadLatexString(latexString: String) {
+        //load(URLRequest(url: URL(string:"about:blank")!))
+        
+        // Reset IntrinsicContentSize
+        viewSize = CGSize(width: frame.size.width, height: 0)
+        self.invalidateIntrinsicContentSize()
+        
         let bundle = Bundle(for: SVLatexView.self)
         let base = bundle.resourceURL?.appendingPathComponent(engine.dirName)
         
@@ -97,8 +85,31 @@ public class SVLatexView: WKWebView, WKUIDelegate {
         loadHTMLString(htmlChanged, baseURL: base)
     }
     
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        evaluateJavaScript("document.readyState", completionHandler: { [weak self] (complete, error) in
+            if complete != nil {
+                self?.evaluateJavaScript("document.body.scrollHeight", completionHandler: { [weak self] (height, error) in
+                    self?.updateViewSize(height: height as! CGFloat)
+                })
+            }
+
+        })
+    }
+    
+    private func updateViewSize(height: CGFloat) {
+        viewSize = CGSize(width: frame.size.width, height: height)
+        self.invalidateIntrinsicContentSize()
+    }
+    
     deinit {
-        removeObserver(self, forKeyPath: #keyPath(scrollView.contentSize))
+        scrollView.delegate = nil
+        navigationDelegate = nil
+    }
+}
+
+extension SVLatexView: UIScrollViewDelegate {
+    public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return nil
     }
 }
 
