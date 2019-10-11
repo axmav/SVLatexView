@@ -14,6 +14,7 @@
                 font-family: -apple-system, BlinkMacSystemFont, sans-serif;
                 font-size: 15px;
             }
+            {*customCSS*}
             </style>
         <link rel="stylesheet" href="katex.min.css" >
             
@@ -24,8 +25,8 @@
             <script defer src="contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
             </head>
 <body>
-<p>
-{*latexString*}
-</p>
+<div id="formula" class="formula-wrap">
+    {*latexString*}
+</div>
 </body>
 </html>

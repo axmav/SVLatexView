@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         v.translatesAutoresizingMaskIntoConstraints = false
         v.layer.borderWidth = 1
         v.layer.borderColor = UIColor.gray.cgColor
+        v.customCSS = ".formula-wrap {line-height: 24px;}"
         //v.isHidden = true
         return v
     }()

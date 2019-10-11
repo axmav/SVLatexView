@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SVLatexView'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'Math equation rendering on iOS'
   s.description      = <<-DESC
   Math equation rendering on iOS using MathJax and WebKit

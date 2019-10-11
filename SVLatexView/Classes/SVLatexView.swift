@@ -27,6 +27,8 @@ public class SVLatexView: WKWebView, WKNavigationDelegate {
     
     var engine: Engine = .KaTeX
     
+    public var customCSS = ""
+    
     let LatexViewSizeObservingContext = UnsafeMutableRawPointer(bitPattern: 1)
     
     var viewSize = CGSize.zero
@@ -81,7 +83,9 @@ public class SVLatexView: WKWebView, WKNavigationDelegate {
         let filePath = bundle.path(forResource:"index", ofType:"html", inDirectory: engine.dirName)!
         // load html string - baseURL needs to be set for local files to load correctly
         let html = try! String(contentsOfFile: filePath, encoding: .utf8)
-        let htmlChanged = html.replacingOccurrences(of: "{*latexString*}", with: latexString)
+        let htmlChanged = html
+            .replacingOccurrences(of: "{*customCSS*}", with: customCSS)
+            .replacingOccurrences(of: "{*latexString*}", with: latexString)
         loadHTMLString(htmlChanged, baseURL: base)
     }
     
