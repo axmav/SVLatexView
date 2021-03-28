@@ -9,7 +9,13 @@
 import UIKit
 import WebKit
 
+public protocol SVLatexViewDelegate {
+    func heightChanged(height: CGFloat)
+}
+
 public class SVLatexView: WKWebView, WKNavigationDelegate {
+    
+    public var delegate: SVLatexViewDelegate?
     
     public enum Engine {
         case MathJax
@@ -94,6 +100,7 @@ public class SVLatexView: WKWebView, WKNavigationDelegate {
             if complete != nil {
                 self?.evaluateJavaScript("document.body.scrollHeight", completionHandler: { [weak self] (height, error) in
                     self?.updateViewSize(height: height as! CGFloat)
+                    self?.delegate?.heightChanged(height: height as! CGFloat)
                 })
             }
 
